@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theekzu Mobile | All iPhones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GkzXCgBEHX2QlCa5KFt4WQ2Uv044SjwZKA&s"
+                    alt="Theekzu Mobile Logo" class="logo-img">
+                <span class="gradient-text">TheekzuMobile</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="nav-icon-btn" id="search-trigger"><i class="fas fa-search"></i></button>
+            <button class="nav-icon-btn" id="cart-trigger">
+                <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+            </button>
+            <button class="nav-icon-btn" id="auth-trigger"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <header class="section" style="padding-top: 150px; text-align: center; position: relative;">
+        <div class="animate-up" style="max-width: 800px; margin: 0 auto;">
+            <span class="gradient-text"
+                style="font-size: 1.2rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; display: block;">
+                Welcome to Theekzu Mobile
+            </span>
+            <h1 class="animate-up" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px;">
+                Where Quality Meets <br>
+                <span class="gradient-text" style="font-weight: 800;">Affordability</span>
+            </h1>
+            <p class="animate-up"
+                style="animation-delay: 0.1s; font-size: 1.2rem; color: var(--secondary-text); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                Browse our extensive collection of over <strong>50+ Premium iPhones</strong>.
+                Each device is strictly quality checked to ensure perfection.
+            </p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="products-grid">
+
+            <!-- 17 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/iPhone-16-Pro-Max-Desert.jpg"
+                    alt="iPhone 17 Pro Max" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 17 Pro Max</h3>
+                    <p class="product-price">Rs. 385,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=17promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('17promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/w300h300-4.png" alt="iPhone 17 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 17 Pro</h3>
+                    <p class="product-price">Rs. 345,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=17pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('17pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/w300h300-8.png" alt="iPhone 17"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 17</h3>
+                    <p class="product-price">Rs. 275,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=17" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('17')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/iPhone-16-Pro-Max-Desert.jpg"
+                    alt="iPhone 16 Pro Max" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 16 Pro Max</h3>
+                    <p class="product-price">Rs. 335,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=16promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('16promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/w300h300-4.png" alt="iPhone 16 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 16 Pro</h3>
+                    <p class="product-price">Rs. 285,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=16pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('16pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/w300h300-8.png" alt="iPhone 16"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 16</h3>
+                    <p class="product-price">Rs. 235,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=16" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('16')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/93-1536x1536-1.webp" alt="iPhone 15 Pro Max"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 15 Pro Max</h3>
+                    <p class="product-price">Rs. 275,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=15promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('15promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/92-1536x1536-1.webp" alt="iPhone 15 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 15 Pro</h3>
+                    <p class="product-price">Rs. 235,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=15pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('15pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/09/pink-22-web.webp" alt="iPhone 15"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 15</h3>
+                    <p class="product-price">Rs. 185,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=15" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('15')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/85-1536x1536-1.webp" alt="iPhone 14 Pro Max"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14 Pro Max</h3>
+                    <p class="product-price">Rs. 225,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/83-1536x1536.webp" alt="iPhone 14 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14 Pro</h3>
+                    <p class="product-price">Rs. 185,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/03/iPhone-14-Plus-Blue-Price-in-Srilanka-Apple-Asia-1.webp"
+                    alt="iPhone 14 Plus" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14 Plus</h3>
+                    <p class="product-price">Rs. 155,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14plus" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14plus')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/03/iPhone-14-Blue-Price-in-Srilanka-Apple-Asia-1.webp"
+                    alt="iPhone 14" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14</h3>
+                    <p class="product-price">Rs. 135,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/75-1536x1536.png.webp" alt="iPhone 13 Pro Max"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13 Pro Max</h3>
+                    <p class="product-price">Rs. 175,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/72-1536x1536.png.webp" alt="iPhone 13 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13 Pro</h3>
+                    <p class="product-price">Rs. 155,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp"
+                    alt="iPhone 13" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13</h3>
+                    <p class="product-price">Rs. 105,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp"
+                    alt="iPhone 13 Mini" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13 Mini</h3>
+                    <p class="product-price">Rs. 95,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13mini" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13mini')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iphone-12-pro-max-gold-e1755780411244.jpg"
+                    alt="iPhone 12 Pro Max" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 12 Pro Max</h3>
+                    <p class="product-price">Rs. 138,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=12promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('12promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iphone-12-pro-max-gold-e1755780411244.jpg"
+                    alt="iPhone 12 Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 12 Pro</h3>
+                    <p class="product-price">Rs. 115,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=12pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('12pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/Apple-iPhone-12-White.jpg" alt="iPhone 12"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 12</h3>
+                    <p class="product-price">Rs. 75,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=12" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('12')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/11-PM-GOLD-e1755858759409.jpg"
+                    alt="iPhone 11 Pro Max" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 11 Pro Max</h3>
+                    <p class="product-price">Rs. 95,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=11promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('11promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/11-PRO-MAX-GOLD.png" alt="iPhone 11 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 11 Pro</h3>
+                    <p class="product-price">Rs. 82,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=11pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('11pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/11-MINT-1281x1536.webp" alt="iPhone 11"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 11</h3>
+                    <p class="product-price">Rs. 62,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=11" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('11')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- X Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/XSMAX-G.jpeg" alt="iPhone XS Max"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone XS Max</h3>
+                    <p class="product-price">Rs. 68,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=xsmax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('xsmax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/XS-WHITE.jpeg" alt="iPhone XS"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone XS</h3>
+                    <p class="product-price">Rs. 55,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=xs" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('xs')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/XSMAX-G.jpeg" alt="iPhone X" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone X</h3>
+                    <p class="product-price">Rs. 48,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=x" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('x')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/01/website-photo-size-39-1536x1536.webp"
+                    alt="iPhone 8 Plus" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 8 Plus</h3>
+                    <p class="product-price">Rs. 38,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=8plus" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('8plus')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SE Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/03/iPhone-SE-3-Price-in-Sri-lanka-Apple-Asia-Black-1.webp"
+                    alt="iPhone SE 2" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone SE 2 (2020)</h3>
+                    <p class="product-price">Rs. 28,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=se2" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('se2')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/03/iPhone-SE-3-Price-in-Sri-lanka-Apple-Asia-Black-1.webp"
+                    alt="iPhone 8" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 8</h3>
+                    <p class="product-price">Rs. 22,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=8" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('8')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 Series -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/01/website-photo-size-41-1536x1536.webp"
+                    alt="iPhone 7 Plus" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 7 Plus</h3>
+                    <p class="product-price">Rs. 25,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=7plus" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('7plus')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2023/07/iPhone-7-Jet-Black-Price-in-Srilanka_1-2.jpg"
+                    alt="iPhone 7" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 7</h3>
+                    <p class="product-price">Rs. 14,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=7" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('7')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px; padding-bottom: 60px;">
+            <div class="footer-col animate-up" style="flex: 1.5; min-width: 300px;">
+                <h3 class="gradient-text" style="font-size: 1.8rem; margin-bottom: 25px;">Theekzu Mobile</h3>
+                <p style="color: var(--secondary-text); font-size: 1.1rem; line-height: 1.8;">
+                    Bringing premium Apple technology to Bibile. Quality you can trust, prices you can afford.
+                    Your definitive source for all things iPhone.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theekzu_mobile?igsh=MThtZGd1OTM3dmJiMg==" target="_blank"
+                        class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@theekzu?_r=1&_t=ZS-93uIvUNC3Qj" target="_blank"
+                        class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 200px; animation-delay: 0.2s;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All iPhones</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 250px; animation-delay: 0.4s;">
+                <h4>Contact Us</h4>
+                <div style="color: var(--secondary-text); line-height: 2;">
+                    <p><i class="fas fa-phone" style="width: 25px; color: var(--accent-color);"></i> 074 024 5749</p>
+                    <p><i class="fas fa-map-marker-alt" style="width: 25px; color: var(--accent-pink);"></i> Bibile, Sri
+                        Lanka</p>
+                    <p><i class="fas fa-envelope" style="width: 25px; color: var(--accent-purple);"></i>
+                        pasindutheekshana21@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid var(--border-color); padding-top: 30px; text-align: center; color: var(--secondary-text); font-size: 0.95rem;">
+            &copy; 2026 Theekzu Mobile. All rights reserved. Crafted for Excellence.
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 style="margin-bottom: 20px;">Search iPhones</h2>
+            <div class="search-input-group">
+                <input type="text" id="product-search" placeholder="Search models (e.g. iPhone 14)...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="auth-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Sign Up</div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="login-form">
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="auth-form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Drawer & Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="modal-close" id="cart-close" style="position: static;">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="text-align: center; color: var(--secondary-text); margin-top: 40px;">Your bag is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span id="cart-total-amount">Rs. 0</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Proceeding to checkout...')">Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

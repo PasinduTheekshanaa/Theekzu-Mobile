@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theekzu Mobile | Premium iPhone Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GkzXCgBEHX2QlCa5KFt4WQ2Uv044SjwZKA&s"
+                    alt="Theekzu Mobile Logo" class="logo-img">
+                <span class="gradient-text">TheekzuMobile</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="nav-icon-btn" id="search-trigger"><i class="fas fa-search"></i></button>
+            <button class="nav-icon-btn" id="cart-trigger">
+                <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+            </button>
+            <button class="nav-icon-btn" id="auth-trigger"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <div class="section product-details-container">
+        <!-- Image Gallery Side -->
+        <div class="animate-up detail-image-wrapper">
+            <div class="detail-image-bg"></div>
+            <img id="detail-image" src="" alt="Product" onmouseover="this.style.transform='scale(1.05)'"
+                onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Product Specs Side -->
+        <div class="animate-up detail-info-wrapper">
+            <span class="stock-badge">In Stock</span>
+            <h1 id="detail-title">Loading...</h1>
+            <p id="detail-price">...</p>
+
+            <p id="detail-desc">
+                Experience the pinnacle of technology. This device comes fully checked and certified by Theekzu Mobile
+                experts.
+                Enjoy pristine condition, verified battery health, and our signature warranty.
+            </p>
+
+            <!-- Storage Selection -->
+            <div class="storage-selection" style="display: none;">
+                <h4 style="margin-bottom: 15px; color: var(--text-color);">Select Storage</h4>
+                <div class="storage-options">
+                    <!-- Options populated by JS -->
+                </div>
+            </div>
+
+            <div class="product-specs-grid">
+                <div class="spec-item animate-up" style="transition-delay: 0.2s;">
+                    <h4>Display</h4>
+                    <p id="spec-display">6.9" Super Retina XDR</p>
+                </div>
+                <div class="spec-item animate-up" style="transition-delay: 0.3s;">
+                    <h4>Chip</h4>
+                    <p id="spec-chip">A18 Pro Bionic</p>
+                </div>
+                <div class="spec-item animate-up" style="transition-delay: 0.4s;">
+                    <h4>Camera</h4>
+                    <p id="spec-camera">48MP Pro System</p>
+                </div>
+                <div class="spec-item animate-up" style="transition-delay: 0.5s;">
+                    <h4>Warranty</h4>
+                    <p>Checking Warranty included</p>
+                </div>
+            </div>
+
+            <div class="detail-actions">
+                <button id="add-to-bag-btn" class="cta-btn primary-action">
+                    <i class="fas fa-shopping-bag"></i> Add to Bag
+                </button>
+                <a href="https://wa.me/94740245749" class="cta-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                </a>
+                <p class="payment-hint">Payments are handled securely via direct contact.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar Products -->
+    <section class="section">
+        <h3 style="margin-bottom: 30px;">You might also like</h3>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp"
+                    alt="iPhone 13" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13</h3>
+                    <p class="product-price">Rs. 100,000</p>
+                    <a href="product-details.html?id=13" class="cta-btn"
+                        style="padding: 10px 25px; font-size: 0.9rem;">View</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/Apple-iPhone-12-White.jpg" alt="iPhone 12"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 12</h3>
+                    <p class="product-price">Rs. 85,000</p>
+                    <a href="product-details.html?id=12" class="cta-btn"
+                        style="padding: 10px 25px; font-size: 0.9rem;">View</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://onei.lk/wp-content/uploads/2024/09/11-MINT-1281x1536.webp" alt="iPhone 11"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 11</h3>
+                    <p class="product-price">Rs. 75,000</p>
+                    <a href="product-details.html?id=11" class="cta-btn"
+                        style="padding: 10px 25px; font-size: 0.9rem;">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left; gap: 60px; padding-bottom: 60px;">
+            <div class="footer-col animate-up" style="flex: 1.5; min-width: 300px;">
+                <h3 class="gradient-text" style="font-size: 1.8rem; margin-bottom: 25px;">Theekzu Mobile</h3>
+                <p style="color: var(--secondary-text); font-size: 1.1rem; line-height: 1.8;">
+                    Bringing premium Apple technology to Bibile. Quality you can trust, prices you can afford.
+                    Your definitive source for all things iPhone.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theekzu_mobile?igsh=MThtZGd1OTM3dmJiMg==" target="_blank"
+                        class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@theekzu?_r=1&_t=ZS-93uIvUNC3Qj" target="_blank"
+                        class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 200px; animation-delay: 0.2s;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All iPhones</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 250px; animation-delay: 0.4s;">
+                <h4>Contact Us</h4>
+                <div style="color: var(--secondary-text); line-height: 2;">
+                    <p><i class="fas fa-phone" style="width: 25px; color: var(--accent-color);"></i> 074 024 5749</p>
+                    <p><i class="fas fa-map-marker-alt" style="width: 25px; color: var(--accent-pink);"></i> Bibile, Sri
+                        Lanka</p>
+                    <p><i class="fas fa-envelope" style="width: 25px; color: var(--accent-purple);"></i>
+                        pasindutheekshana21@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid var(--border-color); padding-top: 30px; text-align: center; color: var(--secondary-text); font-size: 0.95rem;">
+            &copy; 2026 Theekzu Mobile. All rights reserved. Crafted for Excellence.
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 style="margin-bottom: 20px;">Search iPhones</h2>
+            <div class="search-input-group">
+                <input type="text" id="product-search" placeholder="Search models (e.g. iPhone 14)...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="auth-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Sign Up</div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="login-form">
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="auth-form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Drawer & Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="modal-close" id="cart-close" style="position: static;">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="text-align: center; color: var(--secondary-text); margin-top: 40px;">Your bag is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span id="cart-total-amount">Rs. 0</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Proceeding to checkout...')">Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let id = params.get('id') || '17promax';
+
+        window.addEventListener('load', () => {
+            const titleEl = document.getElementById('detail-title');
+            const priceEl = document.getElementById('detail-price');
+            const imgEl = document.getElementById('detail-image');
+            const addBtn = document.getElementById('add-to-bag-btn');
+
+            // Find product in central data if available, or use local map
+            const localProducts = {
+                '17promax': {
+                    title: 'iPhone 17 Pro Max',
+                    basePrice: 385000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/iPhone-16-Pro-Max-Desert.jpg',
+                    storage: { '256': 385000, '512': 435000, '1TB': 485000 },
+                    specs: { display: '6.9" Super Retina XDR', chip: 'A18 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '17pro': {
+                    title: 'iPhone 17 Pro',
+                    basePrice: 345000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/w300h300-4.png',
+                    storage: { '128': 345000, '256': 375000, '512': 415000, '1TB': 465000 },
+                    specs: { display: '6.3" Super Retina XDR', chip: 'A18 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '17': {
+                    title: 'iPhone 17',
+                    basePrice: 275000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/w300h300-8.png',
+                    storage: { '128': 275000, '256': 305000, '512': 355000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A18 Bionic', camera: 'Dual 48MP System' }
+                },
+                '16promax': {
+                    title: 'iPhone 16 Pro Max',
+                    basePrice: 335000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/iPhone-16-Pro-Max-Desert.jpg',
+                    storage: { '256': 335000, '512': 375000, '1TB': 425000 },
+                    specs: { display: '6.9" Super Retina XDR', chip: 'A18 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '16pro': {
+                    title: 'iPhone 16 Pro',
+                    basePrice: 285000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/w300h300-4.png',
+                    storage: { '128': 285000, '256': 315000, '512': 365000, '1TB': 425000 },
+                    specs: { display: '6.3" Super Retina XDR', chip: 'A18 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '16': {
+                    title: 'iPhone 16',
+                    basePrice: 235000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/05/w300h300-8.png',
+                    storage: { '128': 235000, '256': 265000, '512': 305000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A18 Bionic', camera: '48MP Advanced Dual' }
+                },
+                '15promax': {
+                    title: 'iPhone 15 Pro Max',
+                    basePrice: 275000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/11/93-1536x1536-1.webp',
+                    storage: { '256': 275000, '512': 305000, '1TB': 345000 },
+                    specs: { display: '6.7" Super Retina XDR', chip: 'A17 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '15pro': {
+                    title: 'iPhone 15 Pro',
+                    basePrice: 235000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/11/92-1536x1536-1.webp',
+                    storage: { '128': 235000, '256': 265000, '512': 305000, '1TB': 355000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A17 Pro Bionic', camera: '48MP Pro System' }
+                },
+                '15': {
+                    title: 'iPhone 15',
+                    basePrice: 185000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/09/pink-22-web.webp',
+                    storage: { '128': 185000, '256': 215000, '512': 265000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A16 Bionic', camera: '48MP Advanced Dual' }
+                },
+                '14promax': {
+                    title: 'iPhone 14 Pro Max',
+                    basePrice: 225000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/11/85-1536x1536-1.webp',
+                    storage: { '128': 225000, '256': 245000, '512': 275000, '1TB': 305000 },
+                    specs: { display: '6.7" Super Retina XDR', chip: 'A16 Bionic', camera: '48MP Pro System' }
+                },
+                '14pro': {
+                    title: 'iPhone 14 Pro',
+                    basePrice: 185000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/11/83-1536x1536.webp',
+                    storage: { '128': 185000, '256': 205000, '512': 235000, '1TB': 265000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A16 Bionic', camera: '48MP Pro System' }
+                },
+                '14plus': {
+                    title: 'iPhone 14 Plus',
+                    basePrice: 155000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/03/iPhone-14-Plus-Blue-Price-in-Srilanka-Apple-Asia-1.webp',
+                    storage: { '128': 155000, '256': 175000, '512': 200000 },
+                    specs: { display: '6.7" Super Retina XDR', chip: 'A15 Bionic', camera: 'Dual 12MP System' }
+                },
+                '14': {
+                    title: 'iPhone 14',
+                    basePrice: 135000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/03/iPhone-14-Blue-Price-in-Srilanka-Apple-Asia-1.webp',
+                    storage: { '128': 135000, '256': 155000, '512': 180000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A15 Bionic', camera: 'Dual 12MP System' }
+                },
+                '13promax': {
+                    title: 'iPhone 13 Pro Max',
+                    basePrice: 175000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/75-1536x1536.png.webp',
+                    storage: { '128': 175000, '256': 195000, '512': 225000, '1TB': 255000 },
+                    specs: { display: '6.7" Super Retina XDR', chip: 'A15 Bionic', camera: 'Pro 12MP System' }
+                },
+                '13pro': {
+                    title: 'iPhone 13 Pro',
+                    basePrice: 155000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/72-1536x1536.png.webp',
+                    storage: { '128': 155000, '256': 175000, '512': 205000, '1TB': 235000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A15 Bionic', camera: 'Pro 12MP System' }
+                },
+                '13': {
+                    title: 'iPhone 13',
+                    basePrice: 105000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp',
+                    storage: { '128': 105000, '256': 125000, '512': 155000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A15 Bionic', camera: 'Dual 12MP System' }
+                },
+                '13mini': {
+                    title: 'iPhone 13 Mini',
+                    basePrice: 95000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp',
+                    storage: { '128': 95000, '256': 115000, '512': 140000 },
+                    specs: { display: '5.4" Super Retina XDR', chip: 'A15 Bionic', camera: 'Dual 12MP System' }
+                },
+                '12promax': {
+                    title: 'iPhone 12 Pro Max',
+                    basePrice: 138000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/iphone-12-pro-max-gold-e1755780411244.jpg',
+                    storage: { '128': 138000, '256': 150000, '512': 165000 },
+                    specs: { display: '6.7" Super Retina XDR', chip: 'A14 Bionic', camera: 'Pro 12MP System' }
+                },
+                '12pro': {
+                    title: 'iPhone 12 Pro',
+                    basePrice: 115000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/iphone-12-pro-max-gold-e1755780411244.jpg',
+                    storage: { '128': 115000, '256': 128000, '512': 145000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A14 Bionic', camera: 'Pro 12MP System' }
+                },
+                '12': {
+                    title: 'iPhone 12',
+                    basePrice: 75000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/10/Apple-iPhone-12-White.jpg',
+                    storage: { '64': 75000, '128': 85000, '256': 95000 },
+                    specs: { display: '6.1" Super Retina XDR', chip: 'A14 Bionic', camera: 'Dual 12MP System' }
+                },
+                '11promax': {
+                    title: 'iPhone 11 Pro Max',
+                    basePrice: 95000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/11-PM-GOLD-e1755858759409.jpg',
+                    storage: { '64': 95000, '256': 108000, '512': 125000 },
+                    specs: { display: '6.5" Super Retina XDR', chip: 'A13 Bionic', camera: 'Triple 12MP System' }
+                },
+                '11pro': {
+                    title: 'iPhone 11 Pro',
+                    basePrice: 82000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/11-PRO-MAX-GOLD.png',
+                    storage: { '64': 82000, '256': 95000, '512': 110000 },
+                    specs: { display: '5.8" Super Retina XDR', chip: 'A13 Bionic', camera: 'Triple 12MP System' }
+                },
+                '11': {
+                    title: 'iPhone 11',
+                    basePrice: 62000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/11-MINT-1281x1536.webp',
+                    storage: { '64': 62000, '128': 72000, '256': 85000 },
+                    specs: { display: '6.1" Liquid Retina', chip: 'A13 Bionic', camera: 'Dual 12MP System' }
+                },
+                'xsmax': {
+                    title: 'iPhone XS Max',
+                    basePrice: 68000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/XSMAX-G.jpeg',
+                    storage: { '64': 68000, '256': 78000, '512': 88000 },
+                    specs: { display: '6.5" Super Retina OLED', chip: 'A12 Bionic', camera: 'Dual 12MP System' }
+                },
+                'xs': {
+                    title: 'iPhone XS',
+                    basePrice: 55000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/XS-WHITE.jpeg',
+                    storage: { '64': 55000, '256': 65000, '512': 75000 },
+                    specs: { display: '5.8" Super Retina OLED', chip: 'A12 Bionic', camera: 'Dual 12MP System' }
+                },
+                'x': {
+                    title: 'iPhone X',
+                    basePrice: 48000,
+                    img: 'https://onei.lk/wp-content/uploads/2024/09/XSMAX-G.jpeg',
+                    storage: { '64': 48000, '256': 55000 },
+                    specs: { display: '5.8" Super Retina OLED', chip: 'A11 Bionic', camera: 'Dual 12MP System' }
+                },
+                '8plus': {
+                    title: 'iPhone 8 Plus',
+                    basePrice: 38000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/01/website-photo-size-39-1536x1536.webp',
+                    storage: { '64': 38000, '128': 45000, '256': 52000 },
+                    specs: { display: '5.5" Retina HD', chip: 'A11 Bionic', camera: 'Dual 12MP System' }
+                },
+                'se2': {
+                    title: 'iPhone SE 2 (2020)',
+                    basePrice: 28000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/03/iPhone-SE-3-Price-in-Sri-lanka-Apple-Asia-Black-1.webp',
+                    storage: { '64': 28000, '128': 35000, '256': 42000 },
+                    specs: { display: '4.7" Retina HD', chip: 'A13 Bionic', camera: '12MP Wide' }
+                },
+                '8': {
+                    title: 'iPhone 8',
+                    basePrice: 22000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/03/iPhone-SE-3-Price-in-Sri-lanka-Apple-Asia-Black-1.webp',
+                    storage: { '64': 22000, '128': 28000, '256': 35000 },
+                    specs: { display: '4.7" Retina HD', chip: 'A11 Bionic', camera: '12MP Wide' }
+                },
+                '7plus': {
+                    title: 'iPhone 7 Plus',
+                    basePrice: 25000,
+                    img: 'https://onei.lk/wp-content/uploads/2025/01/website-photo-size-41-1536x1536.webp',
+                    storage: { '32': 25000, '128': 32000, '256': 38000 },
+                    specs: { display: '5.5" Retina HD', chip: 'A10 Fusion', camera: 'Dual 12MP System' }
+                },
+                '7': {
+                    title: 'iPhone 7',
+                    basePrice: 14000,
+                    img: 'https://onei.lk/wp-content/uploads/2023/07/iPhone-7-Jet-Black-Price-in-Srilanka_1-2.jpg',
+                    storage: { '32': 14000, '128': 19000, '256': 24000 },
+                    specs: { display: '4.7" Retina HD', chip: 'A10 Fusion', camera: '12MP Wide' }
+                }
+            };
+
+            const product = localProducts[id];
+
+            if (product) {
+                titleEl.textContent = product.title;
+                imgEl.src = product.img;
+
+                // Update specs if available
+                if (product.specs) {
+                    document.getElementById('spec-display').textContent = product.specs.display;
+                    document.getElementById('spec-chip').textContent = product.specs.chip;
+                    document.getElementById('spec-camera').textContent = product.specs.camera;
+                }
+
+                // Handle storage options
+                const storageSection = document.querySelector('.storage-selection');
+                if (product.storage) {
+                    storageSection.style.display = 'block';
+                    const storageOptionsContainer = document.querySelector('.storage-options');
+                    storageOptionsContainer.innerHTML = ''; // Clear existing buttons
+
+                    // Sort storage keys naturally
+                    const storageKeys = Object.keys(product.storage).sort((a, b) => {
+                        if (a === '1TB') return 1;
+                        if (b === '1TB') return -1;
+                        return parseInt(a) - parseInt(b);
+                    });
+
+                    // Default to first storage option
+                    let currentStorage = storageKeys[0];
+                    let currentPrice = product.storage[currentStorage];
+
+                    // Set initial price
+                    priceEl.textContent = `Rs. ${currentPrice.toLocaleString()}`;
+
+                    // Create buttons
+                    storageKeys.forEach(storage => {
+                        const btn = document.createElement('button');
+                        btn.className = `storage-btn ${storage === currentStorage ? 'active' : ''}`;
+                        btn.setAttribute('data-storage', storage);
+                        btn.textContent = storage === '1TB' ? '1TB' : `${storage}GB`;
+
+                        btn.addEventListener('click', () => {
+                            // Update active state
+                            document.querySelectorAll('.storage-btn').forEach(b => b.classList.remove('active'));
+                            btn.classList.add('active');
+
+                            // Update price
+                            currentStorage = storage;
+                            currentPrice = product.storage[storage];
+                            priceEl.textContent = `Rs. ${currentPrice.toLocaleString()}`;
+                        });
+
+                        storageOptionsContainer.appendChild(btn);
+                    });
+
+                    // Add to bag logic for storage variant
+                    if (addBtn) addBtn.onclick = () => {
+                        const productToAdd = {
+                            ...product,
+                            selectedStorage: currentStorage,
+                            price: product.storage[currentStorage]
+                        };
+                        window.addToCart(id, productToAdd);
+                    };
+
+                } else {
+                    // No storage options
+                    storageSection.style.display = 'none';
+                    priceEl.textContent = `Rs. ${product.basePrice.toLocaleString()}`;
+
+                    if (addBtn) addBtn.onclick = () => {
+                        window.addToCart(id, product);
+                    };
+                }
+            } else {
+                titleEl.textContent = 'Product Not Found';
+                priceEl.textContent = '';
+                imgEl.alt = 'Not Found';
+            }
+        });
+    </script>
+</body>
+
+</html>

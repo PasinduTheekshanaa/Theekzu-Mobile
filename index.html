@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theekzu Mobile | Premium iPhone Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GkzXCgBEHX2QlCa5KFt4WQ2Uv044SjwZKA&s" alt="Theekzu Mobile Logo" class="logo-img">
+                <span class="gradient-text">TheekzuMobile</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="nav-icon-btn" id="search-trigger"><i class="fas fa-search"></i></button>
+            <button class="nav-icon-btn" id="cart-trigger">
+                <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+            </button>
+            <button class="nav-icon-btn" id="auth-trigger"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content animate-up">
+                <h1 style="margin-bottom: 20px;">
+                    Find Your <br><span class="gradient-text">Perfect iPhone</span>
+                </h1>
+                <p style="max-width: 700px; margin-bottom: 40px; font-size: 1.2rem; color: var(--secondary-text);">
+                    Experience the future of mobile technology with Bibile's most trusted premium store.
+                    Discover unbeatable deals on the latest Apple devices.
+                </p>
+                <div class="hero-btns" style="display: flex; gap: 20px;">
+                    <a href="products.html" class="cta-btn">Explore Models</a>
+                    <a href="contact.html" class="cta-btn secondary-btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <img src="https://www.apple.com/v/iphone/home/ce/images/overview/select/iphone_17pro__0s6piftg70ym_large.jpg"
+                    alt="iPhone 17 Pro Max Cinematic Reveal" class="hero-iphone"
+                    style="opacity: 0; transform: scale(0.8);"
+                    onerror="this.src='https://onei.lk/wp-content/uploads/2024/11/93-1536x1536-1.webp'">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="features-grid">
+            <div class="product-card animate-up"
+                style="padding: 40px; text-align: center; background: rgba(255,255,255,0.6); backdrop-filter: blur(10px);">
+                <div style="font-size: 3rem; margin-bottom: 20px;">🛡️</div>
+                <h3 style="margin-bottom: 10px;">Original Quality</h3>
+                <p style="color: var(--secondary-text);">100% Genuine Apple Devices with checking warranty.</p>
+            </div>
+            <div class="product-card animate-up"
+                style="padding: 40px; text-align: center; background: rgba(255,255,255,0.6); backdrop-filter: blur(10px); animation-delay: 0.2s;">
+                <div style="font-size: 3rem; margin-bottom: 20px;">🔄</div>
+                <h3 style="margin-bottom: 10px;">Easy Exchange</h3>
+                <p style="color: var(--secondary-text);">Upgrade your life. Get the best value for your old phone.</p>
+            </div>
+            <div class="product-card animate-up"
+                style="padding: 40px; text-align: center; background: rgba(255,255,255,0.6); backdrop-filter: blur(10px); animation-delay: 0.4s;">
+                <div style="font-size: 3rem; margin-bottom: 20px;">🚚</div>
+                <h3 style="margin-bottom: 10px;">Islandwide Delivery</h3>
+                <p style="color: var(--secondary-text);">Safe and secure shipping to your doorstep anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section" id="featured">
+        <h2 class="animate-up">Latest Arrivals</h2>
+        <div class="products-grid">
+
+            <!-- Product 17 Pro Max - NEW FLAGSHIP -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2025/05/iPhone-16-Pro-Max-Desert.jpg"
+                    alt="iPhone 17 Pro Max" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 17 Pro Max</h3>
+                    <p class="product-price">Rs. 385,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=17promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('17promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 14 Pro Max -->
+            <div class="product-card animate-up">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/85-1536x1536-1.webp" alt="iPhone 14 Pro Max"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14 Pro Max</h3>
+                    <p class="product-price">Rs. 225,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14promax" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14promax')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 14 Pro -->
+            <div class="product-card animate-up" style="animation-delay: 0.2s;">
+                <img src="https://onei.lk/wp-content/uploads/2024/11/83-1536x1536.webp" alt="iPhone 14 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 14 Pro</h3>
+                    <p class="product-price">Rs. 185,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=14pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('14pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 13 Pro -->
+            <div class="product-card animate-up" style="animation-delay: 0.4s;">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/72-1536x1536.png.webp" alt="iPhone 13 Pro"
+                    class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13 Pro</h3>
+                    <p class="product-price">Rs. 155,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13pro" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13pro')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card animate-up" style="animation-delay: 0.6s;">
+                <img src="https://onei.lk/wp-content/uploads/2024/10/iPhone-13-All-Colours-%EF%A3%BF1.jpg-2.webp"
+                    alt="iPhone 13" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 13</h3>
+                    <p class="product-price">Rs. 105,000</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="product-details.html?id=13" class="cta-btn"
+                            style="flex: 2; padding: 10px; font-size: 0.9rem; text-align: center;">View</a>
+                        <button onclick="addToCart('13')" class="cta-btn secondary-btn"
+                            style="flex: 1; padding: 10px; font-size: 0.9rem;"><i
+                                class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="products.html" class="view-all-link animate-up">
+                View All 50+ Models <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Accessories Showcase -->
+    <section class="section animate-up accessories-section">
+        <div class="accessories-container">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="text-align: left; margin-bottom: 25px;">Essential <span
+                        class="gradient-text">Accessories</span></h2>
+                <p style="font-size: 1.2rem; color: var(--secondary-text); margin-bottom: 35px; line-height: 1.6;">
+                    Complete your iPhone experience with our curated selection of genuine Apple adapters,
+                    high-speed MagSafe chargers, and premium protective cases.
+                </p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="contact.html" class="cta-btn">Check Availability</a>
+                    <a href="products.html" class="cta-btn secondary-btn">Browse All</a>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%); opacity: 0.1; filter: blur(40px);">
+                </div>
+                <img src="https://onei.lk/wp-content/uploads/2023/07/GN4IN1PY14PBK-62-smart_crop-c0-5__0-5-750x750-70.jpeg"
+                    alt="Accessories"
+                    style="border-radius: 40px; width: 100%; max-width: 500px; box-shadow: var(--shadow-lg); transition: 0.5s;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" style="padding-bottom: 150px;">
+        <h2 class="animate-up">What our <span class="gradient-text">Customers Say</span></h2>
+        <div class="reviews-container animate-up">
+            <div class="reviews-track">
+                <!-- Original Set (8 Unique Reviews) -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best place in Bibile to buy iPhones. The condition was exactly as described."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Dinuka P.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Exchanged my iPhone XR for a 13 Pro. Got a very good exchange price. Highly recommended."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Kasun T.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Friendly service and genuine products. The checking warranty gave me confidence."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Sadeepa M.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Genuine Apple accessories are hard to find, but Theekzu has the original adapters."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Ishara K.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Most trusted shop in Bibile. They are very transparent about battery health."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Lahiru S.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bought my first iPhone 15 here. The team explained everything clearly to me."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Nuwan H.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fast delivery and great packing. Product was in mint condition as promised."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Tharindu R.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Highly recommend for used iPhones. Best prices and reliable checking warranty."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Dilshan W.</h4>
+                </div>
+                <!-- Duplicate Set for Seamless Loop -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best place in Bibile to buy iPhones. The condition was exactly as described."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Dinuka P.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Exchanged my iPhone XR for a 13 Pro. Got a very good exchange price. Highly recommended."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Kasun T.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Friendly service and genuine products. The checking warranty gave me confidence."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Sadeepa M.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Genuine Apple accessories are hard to find, but Theekzu has the original adapters."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Ishara K.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Most trusted shop in Bibile. They are very transparent about battery health."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Lahiru S.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bought my first iPhone 15 here. The team explained everything clearly to me."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Nuwan H.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fast delivery and great packing. Product was in mint condition as promised."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Tharindu R.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Highly recommend for used iPhones. Best prices and reliable checking warranty."</p>
+                    <h4 style="color: var(--text-color); margin-top: 15px;">- Dilshan W.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px; padding-bottom: 60px;">
+            <div class="footer-col animate-up" style="flex: 1.5; min-width: 300px;">
+                <h3 class="gradient-text" style="font-size: 1.8rem; margin-bottom: 25px;">Theekzu Mobile</h3>
+                <p style="color: var(--secondary-text); font-size: 1.1rem; line-height: 1.8;">
+                    Bringing premium Apple technology to Bibile. Quality you can trust, prices you can afford.
+                    Your definitive source for all things iPhone.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theekzu_mobile?igsh=MThtZGd1OTM3dmJiMg==" target="_blank"
+                        class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@theekzu?_r=1&_t=ZS-93uIvUNC3Qj" target="_blank"
+                        class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 200px; animation-delay: 0.2s;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All iPhones</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 250px; animation-delay: 0.4s;">
+                <h4>Contact Us</h4>
+                <div style="color: var(--secondary-text); line-height: 2;">
+                    <p><i class="fas fa-phone" style="width: 25px; color: var(--accent-color);"></i> 074 024 5749</p>
+                    <p><i class="fas fa-map-marker-alt" style="width: 25px; color: var(--accent-pink);"></i> Bibile, Sri
+                        Lanka</p>
+                    <p><i class="fas fa-envelope" style="width: 25px; color: var(--accent-purple);"></i>
+                        pasindutheekshana21@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid var(--border-color); padding-top: 30px; text-align: center; color: var(--secondary-text); font-size: 0.95rem;">
+            &copy; 2026 Theekzu Mobile. All rights reserved. Crafted for Excellence.
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 style="margin-bottom: 20px;">Search iPhones</h2>
+            <div class="search-input-group">
+                <input type="text" id="product-search" placeholder="Search models (e.g. iPhone 14)...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="auth-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Sign Up</div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="login-form">
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="auth-form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Drawer & Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="modal-close" id="cart-close" style="position: static;">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="text-align: center; color: var(--secondary-text); margin-top: 40px;">Your bag is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span id="cart-total-amount">Rs. 0</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Proceeding to checkout...')">Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Theekzu Mobile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GkzXCgBEHX2QlCa5KFt4WQ2Uv044SjwZKA&s"
+                    alt="Theekzu Mobile Logo" class="logo-img">
+                <span class="gradient-text">TheekzuMobile</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="nav-icon-btn" id="search-trigger"><i class="fas fa-search"></i></button>
+            <button class="nav-icon-btn" id="cart-trigger">
+                <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+            </button>
+            <button class="nav-icon-btn" id="auth-trigger"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <header class="section" style="padding-top: 150px; text-align: center; position: relative;">
+        <div class="animate-up" style="max-width: 800px; margin: 0 auto;">
+            <span class="gradient-text"
+                style="font-size: 1.2rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; display: block;">
+                Our Story
+            </span>
+            <h1 class="animate-up" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px;">
+                Bringing Technology <br>
+                <span class="gradient-text" style="font-weight: 800;">Closer to You</span>
+            </h1>
+            <p class="animate-up"
+                style="animation-delay: 0.1s; font-size: 1.2rem; color: var(--secondary-text); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                We are Theekzu Mobile, Bibile's premier destination for Apple devices.
+                Built on trust, quality, and a passion for excellence.
+            </p>
+        </div>
+    </header>
+
+    <section class="section about-content">
+        <div class="about-image animate-up">
+            <img src="https://inspireonline.in/cdn/shop/files/store_big_1500x.jpg?v=1690826434" alt="Store Image">
+        </div>
+        <div class="about-text animate-up" style="animation-delay: 0.2s;">
+            <span class="badge-pill">Who We Are</span>
+            <h2 class="gradient-text" style="display: inline-block; margin-bottom: 25px;">The Theekzu Journey</h2>
+
+            <div class="story-card">
+                <p class="story-lead">
+                    Located in the heart of <span class="highlight">Bibile</span>, <strong>TheekzuMobile</strong> has
+                    established itself as the premier destination for Apple enthusiasts and mobile phone users.
+                </p>
+
+                <div class="story-features">
+                    <div class="s-feature">
+                        <div class="sf-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="sf-text">
+                            <h4>Genuine Quality</h4>
+                            <p>Specializing in brand new & used iPhones with reliable warranties.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-feature">
+                        <div class="sf-icon"><i class="fas fa-users"></i></div>
+                        <div class="sf-text">
+                            <h4>Customer Centric</h4>
+                            <p>Expert advice and support for upgrades and exchanges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="cta-btn icon-btn" style="margin-top: 30px;">
+                    Contact Us <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="stats-container">
+            <div class="stat-box animate-up">
+                <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-box animate-up" style="animation-delay: 0.2s;">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <p>Genuine Products</p>
+            </div>
+            <div class="stat-box animate-up" style="animation-delay: 0.4s;">
+                <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+                <p>Support (24/7)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px; padding-bottom: 60px;">
+            <div class="footer-col animate-up" style="flex: 1.5; min-width: 300px;">
+                <h3 class="gradient-text" style="font-size: 1.8rem; margin-bottom: 25px;">Theekzu Mobile</h3>
+                <p style="color: var(--secondary-text); font-size: 1.1rem; line-height: 1.8;">
+                    Bringing premium Apple technology to Bibile. Quality you can trust, prices you can afford.
+                    Your definitive source for all things iPhone.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theekzu_mobile?igsh=MThtZGd1OTM3dmJiMg==" target="_blank"
+                        class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@theekzu?_r=1&_t=ZS-93uIvUNC3Qj" target="_blank"
+                        class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 200px; animation-delay: 0.2s;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All iPhones</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col animate-up" style="flex: 1; min-width: 250px; animation-delay: 0.4s;">
+                <h4>Contact Us</h4>
+                <div style="color: var(--secondary-text); line-height: 2;">
+                    <p><i class="fas fa-phone" style="width: 25px; color: var(--accent-color);"></i> 074 024 5749</p>
+                    <p><i class="fas fa-map-marker-alt" style="width: 25px; color: var(--accent-pink);"></i> Bibile, Sri
+                        Lanka</p>
+                    <p><i class="fas fa-envelope" style="width: 25px; color: var(--accent-purple);"></i>
+                        pasindutheekshana21@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid var(--border-color); padding-top: 30px; text-align: center; color: var(--secondary-text); font-size: 0.95rem;">
+            &copy; 2026 Theekzu Mobile. All rights reserved. Crafted for Excellence.
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 style="margin-bottom: 20px;">Search iPhones</h2>
+            <div class="search-input-group">
+                <input type="text" id="product-search" placeholder="Search models (e.g. iPhone 14)...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="auth-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Sign Up</div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="login-form">
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="auth-form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="auth-form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Drawer & Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="modal-close" id="cart-close" style="position: static;">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="text-align: center; color: var(--secondary-text); margin-top: 40px;">Your bag is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span id="cart-total-amount">Rs. 0</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Proceeding to checkout...')">Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
